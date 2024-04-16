@@ -8,14 +8,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class ASCdonnesvalidesTest {
+	
 	 public static void main(String[] args) {
-	        // Chemin vers le pilote WebDriver Chrome
+		// Chemin vers le pilote WebDriver Chrome
 	        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\Utilisateur\\chromedriver_win32\\chromedriver.exe");
 
 	        // Initialisez le pilote Chrome
 	        WebDriver driver = new ChromeDriver();
 
-	     // Ouvrez la page de connexion
+	        // Ouvrez la page de connexion
 	        driver.get("https://frontend.staging.saytutension.baamtuservices.com/login");
 
 	        // Entrez les informations d'identification
@@ -25,6 +26,7 @@ public class ASCdonnesvalidesTest {
 	        // Cliquez sur le bouton de connexion
 	        //driver.findElement(By.id("button")).click();
 	        driver.findElement(By.xpath("//button[@class='w-full p-2 text-white bg-primary-saytu rounded-lg my-6\']")).click();
+
 
     // Test name: ASC(données valides)
     // Step # | name | target | value
